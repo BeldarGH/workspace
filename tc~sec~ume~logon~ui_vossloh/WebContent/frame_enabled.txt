@@ -1,0 +1,45 @@
+<%@ page import = "com.sap.security.core.*" %>
+<%@ page import = "com.sap.engine.applications.security.logon.pages.*" %>
+<script language="JavaScript">
+var blockPage = false;
+</script>
+
+<%
+// Check if the logon application can be embedded in pages from different locations. If not, it will not be displayed at all.
+boolean isFrameEmbeddingDisabled = InternalUMFactory.getConfiguration().getBooleanDynamic(Utils.BLOCK_EXT_LOGON_APP_EMBEDDING, false);
+if (isFrameEmbeddingDisabled) {
+%>
+
+<script language="JavaScript">
+try {
+	if (top.document.domain != self.document.domain) {
+		blockPage = true;
+	}
+} catch (error) {
+	// This will happen if the browser running the page that embeds the logon page is in a different domain.
+	// Essentially this is the very problem fixed by this JavaScript, but not all browsers ban access between the document objects of the two frames
+	blockPage = true;
+}
+</script>
+
+<%
+}
+%>
+
+<script language="JavaScript">
+function writeMessage() {
+	document.write("<h2>A possible Cross-Frame Scripting attack has been prevented. Please contact your system administrator or refer to SAP Note 1651004 for more information.</h2>");
+}
+
+if (blockPage) {
+	var browserName = navigator.appName;
+	// According to the tests IE works with document.execCommand(), but Firefox and Chrome do not
+	if (browserName.indexOf("Explorer") > -1) {
+		writeMessage();
+		document.execCommand("Stop");
+	} else {
+		writeMessage();
+		window.stop();
+	}
+}
+</script>

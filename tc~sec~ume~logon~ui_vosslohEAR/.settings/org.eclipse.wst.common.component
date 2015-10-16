@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="tc~sec~ume~logon~ui_vosslohEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="tc~sec~ume~logon~ui_vossloh.war" deploy-path="/" handle="module:/resource/tc~sec~ume~logon~ui_vossloh/tc~sec~ume~logon~ui_vossloh">
+            <dependent-object>WebModule_1441355357968</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

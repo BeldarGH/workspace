@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<servlet>
+<servlet-name>logonPage.jsp</servlet-name>
+<jsp-file>/logonPage.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>changePasswordPage.jsp</servlet-name>
+<jsp-file>/changePasswordPage.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>certLogonPage.jsp</servlet-name>
+<jsp-file>/certLogonPage.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>helpPage.jsp</servlet-name>
+<jsp-file>/helpPage.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>resetPasswordPage.jsp</servlet-name>
+<jsp-file>/resetPasswordPage.jsp</jsp-file>
+</servlet>
+<servlet>
+<servlet-name>systemMessagesPage.jsp</servlet-name>
+<jsp-file>/systemMessagesPage.jsp</jsp-file>
+</servlet>
+<jsp-config>
+<taglib>
+<taglib-uri>/SapLogon</taglib-uri>
+<taglib-location>/WEB-INF/taglib.tld</taglib-location>
+</taglib>
+</jsp-config>
+</web-app>

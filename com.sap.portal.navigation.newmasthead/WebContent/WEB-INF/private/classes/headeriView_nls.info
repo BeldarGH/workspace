@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?japro processed="true"?>
+
+<ROOT CONV_VERSION="1.2">
+<GENERAL>
+<UID>localization.classes.private.PORTAL-I(23eab6:f0ca227145:-7ff5)</UID>
+<PACKAGE>EP_PIN_EU</PACKAGE>
+<DOMAIN>EP</DOMAIN>
+<ORIGLANG>EN</ORIGLANG>
+<RESPONSIBLE>removed_by_japro@sap.com</RESPONSIBLE>
+<DESCRIPTION>Strings for Header iView of the Portal First Page with some Portal Basic functionality</DESCRIPTION>
+</GENERAL>
+<RESOURCES>
+<TEXT AKEY="ADD_TO_FAVORITES_MSG" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Add Page to Favorites</TEXT>
+<TEXT AKEY="ANONYMOUS_DDL_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Select the language for the session</TEXT>
+<TEXT AKEY="BEGINNING_OF_PAGE" LENGTH="255" PROCESSOR="none" TYPE="XTIT">Beginning of Page</TEXT>
+<TEXT AKEY="BOB_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Browse Business Objects</TEXT>
+<TEXT AKEY="HELP_CENTER_BYD_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Open ByDesign Help Center</TEXT>
+<TEXT AKEY="HELP_CENTER_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Open Help Center</TEXT>
+<TEXT AKEY="HELP_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Help</TEXT>
+<TEXT AKEY="HELP_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Display online help to understand more about the portal</TEXT>
+<TEXT AKEY="LEARNING_CENTER" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Learning Center</TEXT>
+<TEXT AKEY="LOG_OFF_CONFIRM_MSG" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Are you sure you want to log off?</TEXT>
+<TEXT AKEY="LOG_OFF_CONFIRM_MSG_ALL_WIN" LENGTH="255" PROCESSOR="none" TYPE="XMSG">All open application windows will be closed and any unsaved data will be lost. Are you sure you want to log off?</TEXT>
+<TEXT AKEY="LOG_OFF_CONFIRM_MSG_UNSAVED" LENGTH="255" PROCESSOR="none" TYPE="XMSG">You have unsaved data. Are you sure you want to log off?</TEXT>
+<TEXT AKEY="LOG_OFF_NO_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">No</TEXT>
+<TEXT AKEY="LOG_OFF_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Log off</TEXT>
+<TEXT AKEY="LOG_OFF_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">End the current portal session and log off</TEXT>
+<TEXT AKEY="LOG_OFF_YES_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Yes</TEXT>
+<TEXT AKEY="LOG_ON_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Log On</TEXT>
+<TEXT AKEY="LOG_ON_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Start the current portal session and log on</TEXT>
+<TEXT AKEY="MASTHEAD_ENTER_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Masthead To skip press F6. To enter, press tab</TEXT>
+<TEXT AKEY="MASTHEAD_EXIT_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">End of Masthead To return to the beginning, press Alt+B</TEXT>
+<TEXT AKEY="NEW_WINDOW_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XMIT">New Session</TEXT>
+<TEXT AKEY="NEW_WINDOW_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Open the portal in a new browser window with the current logged on user</TEXT>
+<TEXT AKEY="PERSONALIZE_PAGE_MSG" LENGTH="255" PROCESSOR="none" TYPE="XMIT">Personalize this Page</TEXT>
+<TEXT AKEY="PERSONALIZE_PAGE_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XMIT">Page</TEXT>
+<TEXT AKEY="PERSONALIZE_PORATL_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XTOL">Personalize your portal preferences</TEXT>
+<TEXT AKEY="PERSONALIZE_PORTAL_MSG" LENGTH="255" PROCESSOR="none" TYPE="XMIT">Global Settings</TEXT>
+<TEXT AKEY="PERSONALIZE_PORTAL_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XMIT">Portal</TEXT>
+<TEXT AKEY="PERSONALIZE_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XMIT">Personalize</TEXT>
+<TEXT AKEY="PORTAL_PLACE_BACK_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XLNK">Back to main Portal</TEXT>
+<TEXT AKEY="PORTAL_PLACE_BACK_TOOLTIP" LENGTH="255" PROCESSOR="none" TYPE="XMSG">Return to the previous location in the main portal</TEXT>
+<TEXT AKEY="UNLOAD_MSG" LENGTH="255" PROCESSOR="none" TYPE="XMSG">You have unsaved data.</TEXT>
+<TEXT AKEY="WELCOME_CLAUSE" LENGTH="255" PROCESSOR="MessageFormat" TYPE="XMSG">Welcome {2} {0} {1}</TEXT>
+<TEXT AKEY="WELCOME_TEXT" LENGTH="255" PROCESSOR="none" TYPE="XTIT">Welcome</TEXT>
+</RESOURCES>
+</ROOT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?japro processed="true"?>
+
+<ROOT CONV_VERSION="1.1">
+<GENERAL>
+<UID>TopLevel_nls.classes.private.PORTA(6af45e2c:118283afc7e:-7ff5)</UID>
+<PACKAGE>EP_PIN_EU</PACKAGE>
+<DOMAIN>EP</DOMAIN>
+<ORIGLANG>EN</ORIGLANG>
+<RESPONSIBLE>removed_by_japro@sap.com</RESPONSIBLE>
+<DESCRIPTION>Strings fot the Top Level Navigation</DESCRIPTION>
+</GENERAL>
+<RESOURCES>
+<TEXT AKEY="ACC_TLN" LENGTH="0" TYPE="YMSG">Top Level Navigation - To skip press F6 - To enter press Tab. To move between items use the left and right arrow keys. To select an item press ENTER</TEXT>
+<TEXT AKEY="ACC_TLN_LEVEL" LENGTH="255" TYPE="XTOL">Level {0}</TEXT>
+<TEXT AKEY="ACC_TLN_SELECTED" LENGTH="255" TYPE="XTOL">Selected link</TEXT>
+<TEXT AKEY="ACC_TLN_UNSELECTED" LENGTH="255" TYPE="XTOL">Unselected link</TEXT>
+<TEXT AKEY="TLN_BCWRD_BTN" LENGTH="255" TYPE="XTOL">Previous entry</TEXT>
+<TEXT AKEY="TLN_FRWRD_BTN" LENGTH="255" TYPE="XTOL">Next entry</TEXT>
+<TEXT AKEY="TLN_OVERFLOW_BTN" LENGTH="255" TYPE="XTOL">Show all entries</TEXT>
+</RESOURCES>
+</ROOT>

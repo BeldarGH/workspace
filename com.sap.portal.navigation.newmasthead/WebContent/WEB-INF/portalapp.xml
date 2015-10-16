@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application name="com.sap.portal.navigation.newmasthead">
+  <application-config>
+    <property name="Vendor" value="sap.com"/>
+    <property name="SecurityArea" value="NetWeaver.Portal"/>
+    <property name="PrivateSharingReference" value="SAPJ2EE::library:com.sap.portal.common, com.sap.portal.useragent, com.sap.portal.admin.wizardframework,                                                     com.sap.portal.common.commonservices,                                                     com.sap.portal.core.utils,                                                     SAPJ2EE::library:com.sapportals.htmlb,                                                     com.sap.portal.license.runtime,                                                     com.sap.portal.navigation.api_service,                                                     com.sap.portal.pagebuilder,                                                     com.sap.portal.themes.lafservice,              SAPJ2EE::library:com.sap.base.technology.facade,              SAPJ2EE::library:engine.j2ee14.facade,              SAPJ2EE::service:engine.security.facade,              com.sap.portal.navigation.helperservice,              com.sap.portal.desktop.desktopservice"/>
+
+    <property name="releasable" value="true"/>
+	<property name="fail-over-enable" value="on_request"/> 
+	
+  <property name="ClassLoadingPolicy" value="transitive"/>
+    </application-config>
+  <components>
+    <component name="default">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.HeaderiView"/>
+        <property name="ResourceBundleName" value="headeriView_nls"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="tlhtmlb" value="/SERVICE/com.sap.portal.htmlb/taglib/htmlb.tld ">
+          <property name="propPermission" value="FINAL"/>
+          <property name="personalization" value="NONE-ALL"/>
+        </property>
+        <property name="com.sap.portal.pcm.Title" value="Header iView"/>
+        <property name="com.sap.portal.iview.HeightType" value="FIXED"/>
+        <property name="com.sap.portal.iview.HeightScale" value="PIXELS"/>
+        <property name="com.sap.portal.iview.Height" value="35"/>
+        <property name="com.sap.portal.iview.WidthType" value="FIXED"/>
+        <property name="com.sap.portal.iview.WidthScale" value="PERCENT"/>
+        <property name="com.sap.portal.iview.Width" value="100"/>
+        <property name="com.sap.portal.iview.TrayType" value="BORDERLESS"/>
+        <property name="com.sap.portal.iview.ShowTray" value="false"/>
+        <property name="com.sap.portal.iview.ShowTitle" value="false"/>
+        <property name="com.sap.portal.iview.ShowRefresh" value="false"/>
+        <property name="com.sap.portal.iview.ShowMaximize" value="false"/>
+        <property name="com.sap.portal.iview.ShowCollapseExpand" value="false"/>
+        <property name="com.sap.portal.iview.ShowPersonalize" value="false"/>
+        <property name="com.sap.portal.iview.ShowRemove" value="false"/>
+        <property name="com.sap.portal.reserved.iview.IsolationMode" value="EMBEDDED"/>
+        <property name="com.sap.portal.iview.Availability" value="MANDATORY"/>
+        <property name="CachingLevel" value="None"/>
+        <property name="ValidityPeriod" value="3600000"/>
+        <property name="ShowPersonalizeContextMenu" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Personalize context menu in Masthead"/>
+          <property name="longDescription" value="Show or hide the 'Personalize' context menu in the masthead iView at runtime."/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="ShowPersonalizeLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Personalize"/>
+          <property name="longDescription" value="Show or hide the 'Personalize' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="HelpUrl" value="http://help.sap.com/netweaver">
+      		<property name="plainDescription" value="URL of Help Link"/>
+      		<property name="category" value="Navigation"/>
+	    </property>
+        <property name="ShowHelpLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Help"/>
+          <property name="longDescription" value="Show or hide the 'Help' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="ShowHelpContextMenu" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Help context menu in Masthead"/>
+          <property name="longDescription" value="Show or hide the 'Help' context menu in the masthead iView at runtime."/>
+          <property name="category" value="Navigation"/>
+        </property>
+	  <property name="HelpMenuEntryHelpCenter" value="false">
+	  <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Menu Entry in Masthead: Open Help Center"/>
+          <property name="longDescription" value="Show or hide the 'Open Help Center' menu option displayed in the masthead iView at runtime."/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="HelpMenuEntryByDHelpCenter" value="false">
+	  <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Menu Entry in Masthead: Open ByDesign Help Center"/>
+          <property name="longDescription" value="Show or hide the 'Open ByDesign Help Center' menu option displayed in the masthead iView at runtime."/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="HelpMenuEntryLearningCenter" value="false">
+	  <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Menu Entry in Masthead: Open Learning Center"/>
+          <property name="longDescription" value="Show or hide the 'Open Learning Center' menu option displayed in the masthead iView at runtime."/>
+          <property name="category" value="Navigation"/>
+        </property>
+	  <property name="HelpMenuEntryBobParam" value="OBN://BOTechnicalName=com.sap.porta.businessobjectbrowser/Operation=DisplayBOBrowser">
+          <property name="plainDescription" value="Navigation Target of Business Objects"/>
+          <property name="longDescription" value="Specify the location of the Business Objects that is accessed from the Help menu in the masthead. An empty value navigates to an empty window."/>
+          <property name="administration" value="NON-DIALOG"/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="HelpMenuEntryLearningCenterParam" value="OBN://BOTechnicalName=LearningCenter/Operation=DisplayLearningCenter">
+          <property name="plainDescription" value="Navigation Target of Learning Center"/>
+          <property name="longDescription" value="Specify the location of the Learning Center that is accessed from the Help menu in the masthead. An empty value navigates to an empty window."/>
+          <property name="administration" value="DIALOG"/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="ShowNewWindowLink" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: New Session"/>
+          <property name="longDescription" value="Show or hide the 'New Session' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="ShowLogInLogOffLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Log In / Log Off"/>
+          <property name="longDescription" value="Show or hide the 'Log In' / Log Off' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+         <property name="ShowSAPStoreLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Enterprise Store"/>
+          <property name="longDescription" value="Show or hide the 'SAP Store' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="50"/>
+        </property>
+        <property name="SAPStoreURL" value="http://www.sapstore.com">
+          <property name="plainDescription" value="Enterprise Store URL"/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="60"/>
+        </property>
+        <property name="SAPStoreURLTitle" value="SAP Store">
+          <property name="plainDescription" value="Enterprise Store Title"/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="70"/>
+        </property>
+        <property name="ShowAnonymousLanguage" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Dropdown List in Masthead: Language Personalization for Anonymous Users"/>
+          <property name="longDescription" value="Show or hide the 'Language' dropdown list in the masthead. This enables anonymous users to personalize the language of the portal at runtime"/>
+          <property name="category" value="Navigation"/>
+        </property>
+      </component-profile>
+    </component>
+
+    <component name="lightHeader">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.LightHeaderiView"/>
+        <property name="ResourceBundleName" value="headeriView_nls"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="tlhtmlb" value="/SERVICE/com.sap.portal.htmlb/taglib/htmlb.tld ">
+          <property name="propPermission" value="FINAL"/>
+          <property name="personalization" value="NONE-ALL"/>
+        </property>
+        <property name="tlframework" value="/SERVICE/com.sap.portal.pagebuilder/taglib/framework.tld"/>
+        <property name="EPCFLevel" value="0"/>
+        <property name="com.sap.portal.pcm.Title" value="Header iView"/>
+        <property name="com.sap.portal.iview.HeightType" value="FIXED"/>
+        <property name="com.sap.portal.iview.HeightScale" value="PIXELS"/>
+        <property name="com.sap.portal.iview.Height" value="35"/>
+        <property name="com.sap.portal.iview.WidthType" value="FIXED"/>
+        <property name="com.sap.portal.iview.WidthScale" value="PERCENT"/>
+        <property name="com.sap.portal.iview.Width" value="100"/>
+        <property name="com.sap.portal.iview.TrayType" value="BORDERLESS"/>
+        <property name="com.sap.portal.iview.ShowTray" value="false"/>
+        <property name="com.sap.portal.iview.ShowTitle" value="false"/>
+        <property name="com.sap.portal.iview.ShowRefresh" value="false"/>
+        <property name="com.sap.portal.iview.ShowMaximize" value="false"/>
+        <property name="com.sap.portal.iview.ShowCollapseExpand" value="false"/>
+        <property name="com.sap.portal.iview.ShowPersonalize" value="false"/>
+        <property name="com.sap.portal.iview.ShowRemove" value="false"/>
+        <property name="com.sap.portal.reserved.iview.IsolationMode" value="EMBEDDED"/>
+        <property name="com.sap.portal.iview.Availability" value="MANDATORY"/>
+        <property name="CachingLevel" value="None"/>
+        <property name="EPCMLevel" value="0"/>
+        <property name="ValidityPeriod" value="3600000"/>
+        <property name="ShowPersonalizeLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Personalize"/>
+          <property name="longDescription" value="Show or hide the 'Personalize' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="ShowHelpLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Help"/>
+          <property name="longDescription" value="Show or hide the 'Help' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="ShowSAPStoreLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Enterprise Store"/>
+          <property name="longDescription" value="Show or hide the 'SAP Store' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="50"/>
+        </property>
+        <property name="SAPStoreURL" value="http://www.sapstore.com">
+          <property name="plainDescription" value="Enterprise Store URL"/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="60"/>
+        </property>
+        <property name="SAPStoreURLTitle" value="SAP Store">
+          <property name="plainDescription" value="Enterprise Store Title"/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+          <property name="order" value="70"/>
+        </property>
+        <property name="ShowNewWindowLink" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: New Session"/>
+          <property name="longDescription" value="Show or hide the 'New Session' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="ShowLogInLogOffLink" value="true">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Link in Masthead: Log In / Log Off"/>
+          <property name="longDescription" value="Show or hide the 'Log In' / Log Off' link displayed in the masthead iView at runtime."/>
+          <property name="category" value="Masthead"/>
+          <property name="configattribute" value="baseLevel"/>
+        </property>
+        <property name="HelpUrl" value="http://help.sap.com/netweaver">
+          <property name="plainDescription" value="Help Link URL"/>
+          <property name="category" value="Navigation"/>
+        </property>
+        <property name="ShowAnonymousLanguage" value="false">
+          <property name="validvalues" value="4/true5/false"/>
+          <property name="plainDescription" value="Show Dropdown List in Masthead: Language Personalization for Anonymous Users"/>
+          <property name="longDescription" value="Show or hide the 'Language' dropdown list in the masthead. This enables anonymous users to personalize the language of the portal at runtime"/>
+          <property name="category" value="Masthead"/>
+		  <property name="configattribute" value="fullLevel"/>
+        </property>
+      </component-profile>
+    </component>
+
+    <component name="logoffConfirmMsg">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.LogoffConfirmMsg"/>
+        <property name="ResourceBundleName" value="headeriView_nls"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="com.sap.portal.pcm.Title" value="Log off"/>
+        <property name="AuthScheme" value="anonymous"/>
+      </component-profile>
+    </component>
+    <component name="logInComponent">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.LogInComponent"/>
+        <property name="ResourceBundleName" value="headeriView_nls"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="com.sap.portal.pcm.Title" value="Log In"/>
+      </component-profile>
+    </component>
+    <component name="LogOutComponent">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.LogOutComponent"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="AuthScheme" value="anonymous"/>
+      </component-profile>
+    </component>
+    <component name="BackTargetComponent">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.BackTargetComponent"/>
+        <property name="SafetyLevel" value="no_safety"/>
+        <property name="ResourceBundleName" value="headeriView_nls"/>
+      </component-config>
+      <component-profile>
+        <property name="AuthScheme" value="anonymous"/>
+      </component-profile>
+    </component>
+    <component name="BrowserDocumentModeiView">
+      <component-config>
+        <property name="ClassName" value="com.sapportals.portal.navigation.BrowserDocumentModeiView"/>
+        <property name="SafetyLevel" value="no_safety"/>
+      </component-config>
+      <component-profile>
+        <property name="com.sap.portal.iview.ShowTray" value="false"/>
+        <property name="AuthScheme" value="anonymous"/>
+        <property name="EPCFLevel" value="0"/>
+        <property name="SupportedUserAgents" value="(*,*,*)">
+          <property name="validvalues" value="7/(*,*,*)"/>
+        </property>
+        <property name="com.sap.portal.framework.IEDocumentCompatibilityMode" value="IE=EmulateIE7">
+          <!-- Drop down values: <property name="validvalues" value="13/IE=EmulateIE74/IE=54/IE=74/IE=813/IE=EmulateIE84/IE=913/IE=EmulateIE95/IE=1010/IE=7, IE=928/IE=EmulateIE7, IE=EmulateIE928/IE=EmulateIE8, IE=EmulateIE97/IE=edge4/None"/> -->
+          <property name="category" value="Framework"/>
+          <property name="plainDescription" value="Browser Document Mode"/>
+          <property name="longDescription" value="Defines how Microsoft Windows Internet Explorer renders the portal"/>
+        </property>
+      </component-profile>
+    </component>
+  </components>
+  <services/>
+</application>

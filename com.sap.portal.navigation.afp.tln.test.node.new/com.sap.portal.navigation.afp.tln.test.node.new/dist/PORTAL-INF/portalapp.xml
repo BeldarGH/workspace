@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application>
+	<application-config>
+		<property name="SecurityArea" value="NetWeaver.Portal"/>
+		<property name="fail-over-enable" value="disable"/>
+		<property name="ClassLoadingPolicy" value="transitive"/>
+		<property name="PrivateSharingReference" value="com.sap.portal.navigation.navigationtaglibrary,com.sap.portal.themes.lafservice,com.sap.portal.runtime.system.connection,com.sap.portal.pagebuilder,SAPJ2EE::library:com.sap.portal.common,SAPJ2EE::library:tc~cmi,com.sap.portal.common.commonservices,SAPJ2EE::library:com.sapportals.htmlb,com.sap.portal.navigation.api_service,com.sap.portal.navigation.helperservice,com.sap.portal.navigation.service,com.sap.portal.productivity.resolverservice,com.sap.portal.navigation.afp.helperservice,com.sap.portal.runtime.system.favorites,SAPJ2EE::service:engine.security.facade,SAPJ2EE::library:com.sap.base.technology.facade,SAPJ2EE::library:engine.j2ee14.facade,com.sap.portal.search.provider_api,com.sap.portal.search.service,com.sap.portal.contenttaggingservice,SAPJ2EE::library:tc~epbc~pcd~gl~api,com.sap.portal.themes.lafservice,com.sap.portal.runtime.system.connection,com.sap.portal.pagebuilder"/>
+		<property name="SharingReference" value="com.sap.portal.themes.lafservice,com.sap.portal.navigation.navigationtaglibrary,com.sap.portal.runtime.application.jcoclient,com.sap.portal.ivs.connectorservice,com.sap.portal.htmlb"/>
+	</application-config>
+
+	<components>
+		<component name="TlnNode">
+		<component-config>
+			<property name="ClassName" value="com.test.TlnNode"/>
+			<property name="SafetyLevel" value="no_safety"/>
+		</component-config>
+		
+		<component-profile/>
+		</component>
+	</components>
+
+	<services/>
+
+</application>

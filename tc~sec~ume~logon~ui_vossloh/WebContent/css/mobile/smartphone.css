@@ -1,0 +1,172 @@
+/* modified mobile CSS */
+.mobile_urCopyrightText {
+	font-size:7px;
+}
+
+/* new mobile CSS */
+#mobileHeaderStrip{
+	height: 7px;
+}
+
+#mobileHeaderTitle{
+	margin-top: 12px;
+	font-size: 20px;
+}
+
+.mobileErrorMessageText {
+	padding-left: 5px;
+	font: 14px arial;
+}
+
+.mobileMsgBarImgError {
+	height: 12px;
+	width: 12px;
+	background-image: url(icons/ico12_msg_mobile_error.png);
+	display: inline-block;
+}
+
+.mobileMsgBarImgOk {
+	height: 12px;
+	width: 12px;
+	background-image: url(icons/ico12_msg_mobile_info.png);
+	display: inline-block;
+}
+
+.mobileMsgMinHeight {
+	min-height: 50px;
+}
+
+.mobileInput {
+	width: 90%;
+	height: 40px;
+	margin: 0 5%;
+	font: 13px arial;
+}
+
+.mobileButton{
+	width: 90%;
+	height: 32px;
+	left: 5%;
+	margin-top: 5px;
+	font: 14px arial;
+	border-radius: 10px;
+}
+
+.mobileMultiInputFirst {
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+.mobileMultiInputLast {
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+.mobileInputNote {
+	height: 60px;
+	padding-top:5px;
+}
+
+.mobileDropDown {
+	width: 90%;
+	left: 5%;
+	margin-top: 10px;
+}
+
+.mobileDropDownImportantWidth {
+	width: 90% !important;
+}
+
+.mobileFormTitle {
+	margin:0 0 10px 5%;
+	font: bold 14px arial;
+}
+
+.mobileText {
+	margin:0 5% 0 5%;
+	font: 14px arial;
+}
+
+.mobileSubText {
+	margin:0 5% 0 5%;
+	font: 12px arial;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.mobileAdditionText{
+	font: 11px arial;
+}
+
+.mobileLinkSubTextMarginLeft{
+	margin:0 0 0 5px;
+}
+
+.pageHeightStrech {
+	min-height: 400px !important;
+}
+
+.mobileLogonPageHeightStrech{
+	min-height: 360px !important;
+}
+
+.mobileLogonProblemPageHeightStrech {
+	min-height: 525px !important;
+}
+
+.mobileResetPasswordPageHeightStrech {
+	min-height: 490px !important;
+}
+
+.mobileHelpPageHeightStrech {
+	min-height: 370px !important;
+}
+
+.mobileCertlogonPageHeightStrech {
+	min-height: 430px !important;
+}
+
+.smartphoneIDPSelectionPageHeightStrech {
+	min-height: 350px !important;
+}
+
+.mobileButtonExtraMarginTop {
+	margin-top: 75px !important;
+}
+
+.mobilePaddedTD{
+	height: 20px;
+	padding: 0 5% 0 5%;
+}
+
+.mobilePaddedTDLarge{
+	height: 65px;
+	padding: 0 5% 0 5%;
+}
+
+input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
+
+#page{
+	min-height: 270px;
+}
+
+/* prt and ur CSS */
+.urmessagearea {
+	height: 40px;
+}
+
+.urLogonData {
+	height:auto;
+}
+
+.urmsgbarimgwarning {
+	background-image: url(icons/ico12_msg_mobile_warning.png) !important;
+}
+

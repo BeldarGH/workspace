@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 20.51-b01 (Sun Microsystems Inc.)
+Edition: NW731CORE_11_REL
+Implementation-Vendor-Id: sap.com
+Implementation-Version: 7.4006.20140113103427.0000
+Perforce-Server: perforce3301.wdf.sap.corp:3301
+Changelist: 355611
+
+Name: origin
+project: js.logon.app
+release: NW731CORE_11_REL
+subproject: _tc~sec~ume~logon~ui
+environment: tc~sec~ume~logon~ui
+envtype: war
+gendir: D:/depot/_build/engine/JSLOGO~1.APP/NW731C~1/gen/dbg/java/sub/_t
+ c~sec~ume~logon~ui/e/01
+
+Name: sap-component
+component: tc/sec/ume/logon/ui
+type: Module
+sub-type: WebModule
+provider: sap.com
+flavors: J2EE
+project: js.logon.app
+subproject: _tc~sec~ume~logon~ui
+J2EE-WebModule-context-root: logon_ui_resources
+apiforwarding: true
+testarchive: false
+

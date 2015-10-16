@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src.api"/>
+	<classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+	<classpathentry kind="src" path="src.core"/>
+	<classpathentry kind="var" path="SAP_EP/resources/prtapi.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/prttest.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/activation.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/jaxm-api.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/mail.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/saaj-api.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/com.sap.sapxmltoolkit.facade.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/com.sap.ide.security.facade.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/com.sap.engine.webservices.jar"/>
+	<classpathentry kind="var" path="SAP_EP/resources/com.sap.portal.runtime.application.soap_api.jar"/>
+	<classpathentry kind="output" path="classes.api"/>
+</classpath>

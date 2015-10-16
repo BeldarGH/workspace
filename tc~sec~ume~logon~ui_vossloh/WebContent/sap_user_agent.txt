@@ -1,0 +1,28 @@
+<%@ page import="java.util.*"%>
+<%
+//In case of NWBC we must deliver just the inner content without any frame around it.
+//No margins to the left and top of the page is required as well.
+String ua_header = request.getHeader("sap-user-agent"); 
+uiFrameVisible = (ua_header==null || !ua_header.toLowerCase().startsWith("nwbc"));
+
+boolean noMargin = (!uiFrameVisible);
+uiFrameAllign = noMargin ? "left" : "center";
+uiFrameTopMargin = "margin-top:" + (noMargin ? "0" : "50px") + ";"; 
+
+//Check for explicit set of direction attribute by query string or post parameter.
+String attrRTL = request.getParameter("sap_rtl");
+isRTLMode = (attrRTL!=null && attrRTL.toLowerCase().equals("true"));
+
+if(!isRTLMode){
+  Locale locale = (Locale)request.getAttribute("setLanguage");
+  if(locale == null) {
+    locale = request.getLocale();            
+  }
+  if(locale != null) {
+    String lang = locale.getLanguage();          
+    Locale localeHe = new Locale("he", "", "");
+    Locale localeFa = new Locale("fa", "", "");        
+    isRTLMode = lang.equals(localeHe.getLanguage()) || lang.equals(localeFa.getLanguage());
+  }    
+}
+%>

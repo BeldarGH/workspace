@@ -1,0 +1,18 @@
+<script type="text/javascript">
+//juqery user screen size fix for iphone
+/**
+$(document).ready( function() {
+	//Maximize the real estate available to the portal contents
+	stretch_portal_content();
+	$(window).resize( stretch_portal_content );
+});
+
+function stretch_portal_content() {
+	if( $(window).height() > $('body').height() ) {
+		$( '#portal-content' ).height(
+			$(window).height() - ( $('body').height() - $('#portal-content').height() )
+		);
+	}
+}
+**/
+</script>
